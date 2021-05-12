@@ -1,0 +1,23 @@
+{
+  "name": "limited_offer_static",
+  "version": "1.0.0",
+  "description": "",
+  "main": "static.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/laureate-institute-for-brain-research/Limited-Offer-Task"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laureate-institute-for-brain-research/Limited-Offer-Task/issues"
+  },
+  "homepage": "",
+  "dependencies": {
+    "express": "^4.16.4",
+    "static-server": "^2.2.1"
+  }
+}
