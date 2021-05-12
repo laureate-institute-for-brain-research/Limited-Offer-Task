@@ -3,13 +3,13 @@
  * @author James Touthang <jtouthang@laureateinstitute.org>
  */
 
-import { PsychoJS } from 'lib/core-2020.1.js';
-import * as core from 'lib/core-2020.1.js';
-import { TrialHandler } from 'lib/data-2020.1.js';
-import { Scheduler } from 'lib/util-2020.1.js';
-import * as util from 'lib/util-2020.1.js';
-import * as visual from 'lib/visual-2020.1.js';
-import { Sound } from 'lib/sound-2020.1.js';
+import { PsychoJS } from './lib/core-2020.1.js';
+import * as core from './lib/core-2020.1.js';
+import { TrialHandler } from './lib/data-2020.1.js';
+import { Scheduler } from './lib/util-2020.1.js';
+import * as util from './lib/util-2020.1.js';
+import * as visual from './lib/visual-2020.1.js';
+import { Sound } from './lib/sound-2020.1.js';
 
 
 // TASAK PARAMS
