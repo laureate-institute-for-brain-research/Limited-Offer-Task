@@ -3,6 +3,8 @@
  * @author James Touthang <jtouthang@laureateinstitute.org>
  */
 
+
+
 import { PsychoJS } from '/Limited-Offer-Task/lib/core-2020.1.js';
 import * as core from '/Limited-Offer-Task/lib/core-2020.1.js';
 import { TrialHandler } from '/Limited-Offer-Task/lib/data-2020.1.js';
@@ -55,7 +57,7 @@ window.onload = function () {
 			return new Promise((resolve, reject) => {
 				$.ajax({
 					type: 'GET',
-					url: '/js/tasks/limited_offer/' + getQueryVariable('run'),
+					url: '/Limited-Offer-Task/js/tasks/limited_offer/' + getQueryVariable('run'),
 					dataType: 'json',
 					success: (data) => {
 						resolve(data)
@@ -79,7 +81,7 @@ window.onload = function () {
 			return new Promise((resolve, reject) => {
 				$.ajax({
 					type: 'GET',
-					url: values['instruct_schedule'],
+					url:  'Limited-Offer-Task/' + values['instruct_schedule'],
 					dataType: 'text',
 					async: false,
 					success: (data) => {
