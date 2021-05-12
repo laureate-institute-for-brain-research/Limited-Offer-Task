@@ -70,8 +70,8 @@ window.onload = function () {
 		// Read RUN Config
 		.then((values) => {
 			// console.log(values['instruct_schedule'])
-			resources.push({ name: 'run_schedule.xls', path: values['schedule'] })
-			resources.push({ name: 'instruct_schedule.csv', path: values['instruct_schedule'] })
+			resources.push({ name: 'run_schedule.xls', path: '/Limited-Offer-Task/' + values['schedule'] })
+			resources.push({ name: 'instruct_schedule.csv', path: '/Limited-Offer-Task/' + values['instruct_schedule'] })
 
 			// Add file paths to expInfo
 			if (values['schedule']) expInfo.task_schedule = values['schedule']
@@ -104,8 +104,8 @@ window.onload = function () {
 							}
 							out.push(obj);
 
-							if (obj['instruct_slide'] != "" || obj['instruct_slide'] != undefined ) resources.push({ name: obj['instruct_slide'], path: obj['instruct_slide'] })
-							if (obj['audio_path'] != "" || obj['audio_path'] != undefined ) resources.push({ name: obj['audio_path'], path: obj['audio_path'] })
+							if (obj['instruct_slide'] != "" || obj['instruct_slide'] != undefined ) resources.push({ name: obj['instruct_slide'], path: '/Limited-Offer-Task/' + obj['instruct_slide'] })
+							if (obj['audio_path'] != "" || obj['audio_path'] != undefined ) resources.push({ name: obj['audio_path'], path: '/Limited-Offer-Task/' + obj['audio_path'] })
 						}
 						// console.log(out)
 						// console.log(resources)
@@ -209,7 +209,7 @@ dialogCancelScheduler.add(quitPsychoJS, '', false);
 
 // Add Slides to resources
 var resources = [
-	{name: 'r_test.xls', path: '/js/tasks/limited_offer/r_test.xls'}
+	{name: 'r_test.xls', path: '/Limited-Offer-Task/js/tasks/limited_offer/r_test.xls'}
 ]
 
 
