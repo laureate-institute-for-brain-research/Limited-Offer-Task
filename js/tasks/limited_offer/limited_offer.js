@@ -38,7 +38,7 @@ window.onload = function () {
 	const getInfoPromise = new Promise((resolve, reject) => {
 		$.ajax({
 			type: 'GET',
-			url: '/js/tasks/limited_offer/' + getQueryVariable('run'),
+			url: '/Limited-Offer-Task/js/tasks/limited_offer/' + getQueryVariable('run'),
 			dataType: 'json',
 			success: (data) => {
 				resolve(data)
@@ -81,7 +81,7 @@ window.onload = function () {
 			return new Promise((resolve, reject) => {
 				$.ajax({
 					type: 'GET',
-					url:  'Limited-Offer-Task/' + values['instruct_schedule'],
+					url:  '/Limited-Offer-Task/' + values['instruct_schedule'],
 					dataType: 'text',
 					async: false,
 					success: (data) => {
