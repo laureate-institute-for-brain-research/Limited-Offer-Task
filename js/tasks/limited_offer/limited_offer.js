@@ -29,7 +29,6 @@ const psychoJS = new PsychoJS({
 });
 
 
-
 window.onload = function () {
 	var id = getQueryVariable('id')
 	var study = getQueryVariable('study')
